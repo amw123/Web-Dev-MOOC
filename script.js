@@ -4,11 +4,11 @@ function sayHello() {
     alert("Hello "+name+ "! Welcome to my website.");
 }
 
-sayHello();
+// sayHello();
 
 function rollDice() {
     let dice = Math.floor(Math.random() * 6) + 1;
     alert("You have rolled a "+ dice)
 }
 
-rollDice()
+// rollDice()
