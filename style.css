@@ -7,11 +7,12 @@
 
 body {
     background: rgba(76,133,75,255);
-    background-image: url("hockey.webp"),url("Hockey-Pitch.jpg"),url("Field_hockey.jpg");
+    background-image: url("hockey.webp"),url("Hockey-Pitch.jpg"),url("Field_hockey.jpg"),url("GoaliePic.webp");
     background-repeat: no-repeat;
-    background-position-y: top, 1000px, bottom;
-    background-position-x: center, center, center;
-    background-size: 100%, 50%, 100%;
+    /* Issue to address later: goalie image shifts when the screen size changes*/
+    background-position-y: top, 1000px, bottom, 1500px;     
+    background-position-x: center, center, center, right;
+    background-size: 100%, 50%, 100%, 25%;
     margin-left: 40px;
     margin-right: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -76,11 +77,19 @@ span {
 }
 
 #goalie {
+    h3 {
+        /* color:rgb(255, 0, 208);
+        text-shadow: 1px 1px 25px black; */
+        color:black;
+        text-shadow: 1px 1px 5px rgb(255, 0, 208);
+        font-size: 27px;
+    }
     color:black;
     text-shadow: 1px 1px rgb(255, 0, 208);
     background:white;
     text-align: center;
     padding: 10px;
+    margin-right: 25%;
 }
 
 #rules-list {

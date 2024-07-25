@@ -37,6 +37,8 @@ function darkMode() {
 
         document.getElementById("goalie").style.background = "black";
         document.getElementById("goalie").style.color = "pink";
+        document.getElementById("goalieTitle").style.color = "white";
+        // document.getElementById("goalieTitle").style.text-shadow = "pink";
 
         darkModeOn =true
     }
