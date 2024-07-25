@@ -6,7 +6,8 @@
 
 
 body {
-    background: rgba(76,133,75,255);
+    /* background: rgb(5, 0, 38); */
+    background: rgb(76,133,75);
     background-image: url("hockey.webp"),url("Hockey-Pitch.jpg"),url("Field_hockey.jpg"),url("GoaliePic.webp");
     background-repeat: no-repeat;
     /* Issue to address later: goalie image shifts when the screen size changes*/
@@ -41,6 +42,7 @@ span {
         text-align: center;
         font-family: fantasy;
         background-color: white;
+        font-size: 30px;
     }
 }
 
@@ -54,6 +56,18 @@ span {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+#def {
+    background-color:#0b005c;
+}
+
+#mid {
+    background-color:#000000;
+}
+
+#att {
+    background-color:#004700;
 }
 
 /* Create three equal columns that floats next to each other */

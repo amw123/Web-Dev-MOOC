@@ -16,29 +16,56 @@ function rollDice() {
 let darkModeOn = false 
 
 function darkMode() {
-    // if (dark == true){     //  Light mode
-    //     dark = false;
+    
+/* Dark-mode Colour Palette:
+Off-black  #121212            background
+Red     #FF0000               title / bigger headers
+Orange  #FF8200                headers
+Amber   #FFC100                main text
+Vanilla #FFEAAE                emphasis
 
-    //     document.body.style.color = "black";
-    //     document.h1.style.backgroundColor = "white";
-    //     document.span.style.color = "white";
-    //     document.getElementById("pos").h2.style.backgroundColor = "white";
-    //     document.getElementById("pos").h2.style.color = "black";
-    //     document.getElementById("pos-text").style.color = "black";
-    //     document.getElementById("rules-list").h2.style.backgroundColor = "white";
-    //     document.getElementById("rules-list").style.color = "black";
-    // }
+Other Colours I Might Want To Come Back To:
+#CA9CE1        pale pink
+#EAD5E6
+#F2BEFC        pale orange?
+*/
+
+
     
     if (darkModeOn==false) {                  // Dark mode
-        document.body.style.background = "black";
+        document.body.style.background = "#121212"; //dark grey
 
-        document.getElementById("pos").style.background = "black";
-        document.getElementById("pos").style.color = "lightgreen";
+        // FIgure out how to add images into the dark mode
+        //document.getElementsByTagName("body").style.backgroundImage = "url('BWhockey.jpeg')"
 
-        document.getElementById("goalie").style.background = "black";
+        document.getElementById("mainTitle").style.background =  "#121212"; 
+        document.getElementById("mainTitle").style.color = "#FF0000";
+        //document.getElementById("mainTitle").style.border = "#CA9CE1";
+
+        document.getElementById("intro").style.color = "#FFC100";
+        // document.getElementById("intro").style.textShadow = "1px, 1px, white";
+
+        document.getElementById("posTitle").style.background = "#121212";
+        document.getElementById("posTitle").style.color = "#FF8200";
+        //document.getElementById("posTitle").style.textDecoration = "underline";
+        //document.getElementById("posTitle").style.textDecorationColor = "lightblue";
+        //document.getElementById("posTitle").style.textDecorationThickness ="2px";
+
+        document.getElementById("pos-text").style.background = "#121212";
+        document.getElementById("pos-text").style.color = "#FFC100";
+        
+        //document.getElementById("def").style.background = "#121212";   // we want to leave the color as it is
+        document.getElementById("def").style.color = "#FFC100";
+        //document.getElementById("mid").style.background = "#121212";
+        document.getElementById("mid").style.color = "#FFC100";
+        document.getElementById("att").style.background = "#250144"; //dark purple
+        document.getElementById("att").style.color = "#FFC100";
+
+
+        document.getElementById("goalie").style.background = "#121212";
         document.getElementById("goalie").style.color = "pink";
         document.getElementById("goalieTitle").style.color = "white";
-        // document.getElementById("goalieTitle").style.text-shadow = "pink";
+        
 
         darkModeOn =true
     }
