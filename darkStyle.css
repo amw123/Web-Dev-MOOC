@@ -1,19 +1,11 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700display=swap"); */
-
-/* html{
-    font-family: "Poppins", sans-serif;
-} */
-
-
 body {
-    /* background: #3c3636; */
-    background: rgb(76,133,75);
-    background-image: url("hockey.webp"),url("Hockey-Pitch.jpg"),url("Field_hockey.jpg"),url("GoaliePic.webp");
+    background: #121212;
+    background-image: url("HockeySticks.jpg"),url("Hockey-Pitch.jpg"),url("GoaliePic.webp");
     background-repeat: no-repeat;
     /* Issue to address later: goalie image shifts when the screen size changes*/
-    background-position-y: top, 1000px, bottom, 1500px;     
-    background-position-x: center, center, center, right;
-    background-size: 100%, 50%, 100%, 25%;
+    background-position-y: bottom,1000px,1500px;     
+    background-position-x: 40px, center, right;
+    background-size: 100%, 50%, 25%;
     margin-left: 40px;
     margin-right: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -21,7 +13,9 @@ body {
 }
 
 h1 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: #121212; */
+    color: #FF0000;
+    text-shadow: 2px 2px black;
     font-size: 40px;
     margin-left: 0px;
     padding: 15px;
@@ -31,23 +25,32 @@ h1 {
 }
 
 #intro {
-    color: white;
+    color: #FFC100;
     text-shadow: -1px -1px 5px black;
     font-size: 20px;
 }
 
+#posTitle {
+    /* background: #121212; */
+    color: #FF0000;
+    text-shadow: 1px 1px  #FFEAAE;
+    background-color: #121212;
+}
+
 #pos {
-    padding-top: 10px;        /*200 */
+    padding-top: 10px;
+    color:#FF8200;
     h2 {
         text-align: center;
         font-family: fantasy;
-        background-color: white;
+        /* background-color: white; change possibly */
         font-size: 30px;
     }
 }
 
 #pos-text {
-    color:white;
+    background:#121212;  /* not sure it's necessary to specify the background color anymore*/
+    color:#FFC100;
     text-shadow: -1px -1px 5px black;
     /* background-color: black; */
     background-blend-mode: darken;
@@ -60,14 +63,17 @@ h1 {
 
 #def {
     background-color:#0b005c;
+    color: #FFC100;
 }
 
 #mid {
     background-color:#000000;
+    color: #FFC100;
 }
 
 #att {
-    background-color:#004700;
+    background-color:#250144;
+    color: #FFC100;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -98,9 +104,9 @@ h1 {
         text-shadow: 1px 1px 5px rgb(255, 0, 208);
         font-size: 27px;
     }
-    color:black;
+    color:pink;
     text-shadow: 1px 1px rgb(255, 0, 208);
-    background:white;
+    background:#121212;
     text-align: center;
     padding: 10px;
     margin-right: 25%;
@@ -110,7 +116,7 @@ h1 {
     float: left;
     width: 30%;
     padding: 10px;
-    background-color: rgba(255, 251, 0, 0.833);
+    background-color: #FF0000;
     color: black;
 }
 
@@ -118,7 +124,7 @@ h1 {
     float: right;
     width: 30%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.492);
+    background-color: #250144;
     color: white;
 }
 
@@ -145,6 +151,6 @@ h1 {
     position:fixed;
     top: 10px;
     right:40px;
-    color: rgb(221, 196, 124);
-    background-color: #451b01;
+    color: black;
+    background-color: white;
 }

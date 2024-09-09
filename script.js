@@ -15,7 +15,7 @@ function rollDice() {
 
 let darkModeOn = false 
 
-function darkMode() {
+
     
 /* Dark-mode Colour Palette:
 Off-black  #121212            background
@@ -30,12 +30,12 @@ Other Colours I Might Want To Come Back To:
 #F2BEFC        pale orange?
 */
 
-
+    /*
     
     if (darkModeOn==false) {                  // Dark mode
         document.body.style.background = "#121212"; //dark grey
 
-        // FIgure out how to add images into the dark mode
+        // Figure out how to add images into the dark mode
         //document.getElementsByTagName("body").style.backgroundImage = "url('BWhockey.jpeg')"
 
         document.getElementById("mainTitle").style.background =  "#121212"; 
@@ -69,6 +69,29 @@ Other Colours I Might Want To Come Back To:
 
         darkModeOn =true
     }
+    else {
+
+    }
+
+
+
+
+    if (darkModeOn ==false){
+        document.getElementByTagName("link").style.rel = "stylesheet";
+        document.getElementByTagName("link").style.href = "./darkStyle.css";
+        darkMode = true;
+    }
+    else if (darkModeOn == true) {
+        document.getElementByTagName("link").style.rel = "stylesheet";
+        document.getElementByTagName("link").style.href = "./style.css";
+        darkMode = false;
+
+
+
+
+
+
+    */
     //document.body.style.color = "white";
     // document.h1.style.backgroundColor = "black";
     // document.span.style.color = "light-green";
@@ -77,7 +100,11 @@ Other Colours I Might Want To Come Back To:
     // document.getElementById("pos-text").style.color = "green";
     // document.getElementById("rules-list").h2.style.backgroundColor = "black";
     // document.getElementById("rules-list").style.color = "pink";
-    
-    
-} 
-
+function darkMode() {
+    var theme = document.getElementsByTagName('link')[0];  
+    if (theme.getAttribute('href') == 'style.css') { 
+        theme.setAttribute('href', 'mutedStyle.css'); 
+    } else { 
+        theme.setAttribute('href', 'style.css'); 
+    }
+}
